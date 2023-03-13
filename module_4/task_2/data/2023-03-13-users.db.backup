@@ -1,0 +1,6 @@
+userA, admin
+userB, admin
+userC, guest
+inkognito, admin
+manager, admin
+userA, guest
