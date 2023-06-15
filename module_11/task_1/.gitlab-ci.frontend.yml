@@ -1,0 +1,25 @@
+stages:
+  - checking
+  - build
+  - deploy
+
+image: node:latest
+
+checking:
+  stage: checking
+  script:
+    - echo "Running tests"
+    - echo "Running eslint files check"
+    - echo "Running npm audit"
+
+build:
+  stage: build
+  script:
+    - echo "Building application"
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying the app"
+  only:
+    - main
